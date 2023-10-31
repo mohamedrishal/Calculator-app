@@ -53,11 +53,11 @@ function App() {
 
   return (
     <div
-      style={{ height: "40rem" }}
+      style={{ height: "95vh" }}
       className="d-flex justify-content-center align-items-center"
     >
       <div
-        style={{ height: "36rem", width: "60vh" }}
+        style={{ height: "75vh", width: "60vh" }}
         className="p-3 shodow bg-dark rounded"
       >
         {/* input Box */}
