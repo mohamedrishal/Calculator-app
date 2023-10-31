@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div
-      style={{ height: "48rem" }}
+      style={{ height: "40rem" }}
       className="d-flex justify-content-center align-items-center"
     >
       <div
