@@ -57,7 +57,7 @@ function App() {
       className="d-flex justify-content-center align-items-center"
     >
       <div
-        style={{ height: "75vh", width: "60vh" }}
+        style={{ height: "89vh", width: "60vh" }}
         className="p-3 shodow bg-dark rounded"
       >
         {/* input Box */}
