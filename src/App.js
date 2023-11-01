@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 
 function App() {
   const [input, setInput] = useState("");
@@ -15,7 +14,7 @@ function App() {
         setResult(calculatedResult);
         setInput("");
         setSample("");
-        setDisplay("")
+        setDisplay("");
       } catch (error) {
         setInput("");
         setResult("Error");
@@ -58,37 +57,37 @@ function App() {
     >
       <div
         style={{ height: "83vh", width: "60vh" }}
-        className="p-3 shodow bg-dark rounded"
+        className="p-3 shodow bg-black rounded"
       >
         {/* input Box */}
         <div
-          style={{ height: "5rem" }}
-          className="d-flex justify-content-end p-3"
+          style={{ height: "8rem" }}
+          className="d-flex justify-content-end p-2"
         >
           <div>
             <p className="text-white">{sample}</p>
             {input.length > 0 ? (
-              <h1 className="text-white p-2">{display}</h1>
+              <p className="text-white fw-bolder fs-1">{display}</p>
             ) : (
-              <h1 className="text-white p-2">{result}</h1>
+              <p className="text-white fw-bolder fs-1">{result}</p>
             )}
           </div>
         </div>
 
         {/* buttons */}
-        <div className="d-flex flex-column justify-content-between align-items-center p-3 mt-4">
+        <div className="d-flex flex-column justify-content-between align-items-center p-2">
           <div className="d-flex justify-content-between w-100 p-1">
             <button
               onClick={() => click("CLEAR")}
-              style={{ width: "125px" }}
-              className="rounded btn btn-dark border text-white px-3 py-3 fs-4 mb-2 "
+              style={{ width: "145px" }}
+              className="rounded btn btn-dark border text-white px-3 py-3 fs-4"
             >
               <span className="text-danger">C</span>
             </button>
             <button
               onClick={() => click("BACK")}
-              style={{ width: "125px" }}
-              className="rounded btn btn-dark border text-white px-3 py-3 fs-4 mb-2"
+              style={{ width: "145px" }}
+              className="rounded btn btn-dark border text-white px-3 py-3 fs-4"
             >
               <i class="fa-solid fa-delete-left text-success"></i>
             </button>
@@ -96,7 +95,12 @@ function App() {
               onClick={() => click("/")}
               className="rounded btn btn-dark border text-white px-3 py-3 w-25 fs-4"
             >
-              <span className="text-success fs-5 fw-bolder">/</span>
+              <span
+                style={{ fontSize: "5px" }}
+                className="text-success fs-5 fw-bolder"
+              >
+                /
+              </span>
             </button>
           </div>
           <div className="d-flex justify-content-between w-100 p-1">
@@ -177,7 +181,7 @@ function App() {
               <span className="text-success fw-bolder fs-3">-</span>
             </button>
           </div>
-          <div className="d-flex justify-content-between w-100 p-1 mt-1">
+          <div className="d-flex justify-content-between w-100 p-1 ">
             <button
               onClick={() => click("0")}
               className="rounded-circle btn btn-dark border text-white px-4  fs-4"
@@ -185,6 +189,7 @@ function App() {
               0
             </button>
             <button
+              style={{ width: "4rem" }}
               onClick={() => click(".")}
               className="rounded-circle btn btn-dark border text-white px-4 me-1  fs-1"
             >
@@ -192,7 +197,7 @@ function App() {
             </button>
             <button
               onClick={() => click("=")}
-              style={{ width: "185px" }}
+              style={{ width: "12.2rem" }}
               className="rounded btn btn-success border text-white px-3 py-3 fs-4 "
             >
               =
